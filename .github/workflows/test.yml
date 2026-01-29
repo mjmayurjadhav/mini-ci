@@ -7,7 +7,7 @@ jobs:
 
        steps:
            - name: Checkout repository
-              users: actions/checkout@v4
+              uses: actions/checkout@v4
 
            - name: Run format check
               run:  |
