@@ -7,9 +7,9 @@ jobs:
 
        steps:
            - name: Checkout repository
-              uses: actions/checkout@v4
+             uses: actions/checkout@v4
 
            - name: Run format check
-              run:  |
+             run: |
                   echo "Checking code format..."
                   echo "Format check completed successfully"
