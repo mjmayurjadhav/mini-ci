@@ -1,9 +1,9 @@
-name: Mini CI Code Format & Syntax Check
+name: Mini CI Code Format Check
 
 on: [push]
 
 jobs:
-  ci-check:
+  format-check:
     runs-on: ubuntu-latest
 
     steps:
@@ -21,4 +21,3 @@ jobs:
       - name: Run format check
         run: black --check .
 
-  
