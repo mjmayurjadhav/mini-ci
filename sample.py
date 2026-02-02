@@ -21,4 +21,3 @@ if __name__ == "__main__":
     print("Subtract:", subtract(10, 5))
     print("Multiply:", multiply(10, 5))
     print("Divide:", divide(10, 5))
-
