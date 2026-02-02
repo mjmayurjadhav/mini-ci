@@ -1,9 +1,9 @@
-name: Mini CI Code Format Check
+name: Mini CI Code Format & Syntax Check
 
 on: [push]
 
 jobs:
-  format-check:
+  ci-check:
     runs-on: ubuntu-latest
 
     steps:
@@ -13,7 +13,7 @@ jobs:
       - name: Set up Python
         uses: actions/setup-python@v5
         with:
-          python-version: '3.x'
+          python-version: "3.x"
 
       - name: Install formatter
         run: pip install black
@@ -21,4 +21,4 @@ jobs:
       - name: Run format check
         run: black --check .
 
-
+  
